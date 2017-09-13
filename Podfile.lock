@@ -29,11 +29,22 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - SwiftTools (1.1.14)
 
 DEPENDENCIES:
   - Cartography
   - Firebase/Core
   - Firebase/Database
+  - SwiftTools (from `https://github.com/jwitcig/SwiftTools.git`)
+
+EXTERNAL SOURCES:
+  SwiftTools:
+    :git: https://github.com/jwitcig/SwiftTools.git
+
+CHECKOUT OPTIONS:
+  SwiftTools:
+    :commit: 11a72c406f6872ecd45cfde622fdec80a9b8f6b1
+    :git: https://github.com/jwitcig/SwiftTools.git
 
 SPEC CHECKSUMS:
   Cartography: '0538ccb4044acbbda2266335fc58cb4228794d90'
@@ -45,7 +56,8 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   leveldb-library: 10fb39c39e243db4af1828441162405bbcec1404
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  SwiftTools: 4de240f38e2fe29ae25ce544cca6dc62072fbc19
 
-PODFILE CHECKSUM: 230e436fe945de91c2eb2d518275c3e2e5cbbed7
+PODFILE CHECKSUM: edb0a6fa640da0c68f9866cef0110329a5f35335
 
 COCOAPODS: 1.2.1

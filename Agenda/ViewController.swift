@@ -9,6 +9,9 @@
 import UIKit
 
 import Cartography
+import FirebaseDatabase
+
+let username = ""
 
 class ViewController: UIViewController {
 
@@ -16,6 +19,8 @@ class ViewController: UIViewController {
     
     var selections: [UIView] = []
     var currentSelection: UIView?
+    
+    var agenda: Agenda?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +50,40 @@ class ViewController: UIViewController {
             $0.leading == $1.leading
             $0.trailing == $1.trailing
         }
+        
+//        let databaseRef = Database.database().reference()
+//        databaseRef.child("agendas/\(username)").observeSingleEvent(of: .value) {
+//            let agenda = Agenda(snapshot: $0)
+//            self.agenda = agenda
+//
+//            self.show(agenda: agenda)
+//        }
+        
+        let event = Event(startTime: 1.4, endTime: 4)
+        let agenda = Agenda(snapshot: <#T##DataSnapshot#>)
+    }
+    
+    func show(agenda: Agenda) {
+        
+        for event in agenda.events {
+            
+            
+            
+        }
+        
+    }
+    
+    func showEvent(atStartTime: Int, endTime: Int) -> UIView {
+        let event = UIView()
+        currentSelection = event
+        
+        guard let selection = currentSelection else { return }
+        
+        selection.frame = CGRect(x: 0, y: location.y, width: 10, height: 10)
+        selection.backgroundColor = .red
+        selection.alpha = 0.5
+        
+        view.addSubview(selection)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

@@ -10,6 +10,8 @@ target 'Agenda' do
   pod 'Firebase/Core'
   pod 'Firebase/Database'
 
+  pod 'SwiftTools', :git => 'https://github.com/jwitcig/SwiftTools.git'
+
   target 'AgendaTests' do
     inherit! :search_paths
     # Pods for testing
