@@ -1,5 +1,5 @@
 PODS:
-  - Cartography (1.1.0)
+  - Cartography (2.0.0)
   - Firebase/Core (4.1.1):
     - FirebaseAnalytics (= 4.0.3)
     - FirebaseCore (= 4.0.6)
@@ -35,19 +35,14 @@ DEPENDENCIES:
   - Cartography
   - Firebase/Core
   - Firebase/Database
-  - SwiftTools (from `https://github.com/jwitcig/SwiftTools.git`)
+  - SwiftTools (from `~/Documents/projects/SwiftTools`)
 
 EXTERNAL SOURCES:
   SwiftTools:
-    :git: https://github.com/jwitcig/SwiftTools.git
-
-CHECKOUT OPTIONS:
-  SwiftTools:
-    :commit: 11a72c406f6872ecd45cfde622fdec80a9b8f6b1
-    :git: https://github.com/jwitcig/SwiftTools.git
+    :path: "~/Documents/projects/SwiftTools"
 
 SPEC CHECKSUMS:
-  Cartography: '0538ccb4044acbbda2266335fc58cb4228794d90'
+  Cartography: d295eb25ab54bb57eecd8c2f04e9648c850f1281
   Firebase: 052c0de688fc87b414996eea13e223dd9fee3fa2
   FirebaseAnalytics: 76f754d37ca5b04f36856729b6af3ca0152d1069
   FirebaseCore: 28def3c643989c97ea5a69ea5000f5fa9902b9fd
@@ -58,6 +53,6 @@ SPEC CHECKSUMS:
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   SwiftTools: 4de240f38e2fe29ae25ce544cca6dc62072fbc19
 
-PODFILE CHECKSUM: edb0a6fa640da0c68f9866cef0110329a5f35335
+PODFILE CHECKSUM: b9bfc1348cf0056b033ca78b954f85232452289f
 
 COCOAPODS: 1.2.1
